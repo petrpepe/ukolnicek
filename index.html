@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Úkolníček</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="pocty">
+            <div class="zadano">
+                <h5>Zadané úkoly</h5>
+                <p id="zadano">00</p>
+            </div>
+            <div class="celkem">
+                <h5>Celkový počet úkolů</h5>
+                <p id="celkem">00</p>
+            </div>
+            <div class="hotovo">
+                <h5>Hotové úkoly</h5>
+                <p id="hotovo">00</p>
+            </div>
+        </section>
+        <section class="seznam_ukolu">
+            <div class="ukol ukol_vzor">
+                <div class="checkbox neudelano"></div>
+                <p>Úkol</p>
+                <img src="icons/delete_black_24dp.svg" alt="popelnice">
+            </div>
+        </section>
+        <section class="novy_ukol">
+            <input type="text" name="obsah_ukolu" id="obsah_ukolu" placeholder="Text úkolu"/>
+            <div class="tlacitko_pridat">
+                <img src="icons/add_black_24dp.svg" alt="plus">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Vytvořeno mnou (Petr Svoboda)</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

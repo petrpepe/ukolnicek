@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #c1c1c1;
+    display: flex;
+    flex-direction: column;
+}
+
+h5 {
+    font-size: 1.225rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+main {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 450px;
+    min-height: 640px;
+    background-color: beige;
+    border-radius: 20px;
+}
+
+main > .pocty {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    margin: 20px 10px;
+    text-align: center;
+}
+
+.pocty > div > * {
+    justify-content: center;
+    align-self: center;
+}
+
+.ukol {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    height: 70px;
+    background-color: #F7F7F7;
+    align-items: center;
+    border-radius: 10px;
+    margin: 0 10px 10px 10px;
+}
+
+.ukol_vzor {
+    display: none;
+}
+
+.checkbox {
+    display: block;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.checkbox:hover {
+    background-color: #55fbf6;
+}
+
+.udelano {
+    background-color: #02C3BD;
+}
+
+.udelano + p {
+    text-decoration: line-through;
+}
+
+.neudelano {
+    background-color: #E8E8E8;
+}
+
+.neudelano + p {
+    text-decoration: unset;
+}
+
+main > .novy_ukol {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    width: 80%;
+    height: 8%;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+input{
+    border: none;
+    border-bottom: 2px solid #BCC3DB;
+    background-color: beige;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 4px solid #BCC3DB;
+}
+
+.tlacitko_pridat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #FFBA08;
+    margin-left: auto;
+}
+
+.tlacitko_pridat img {
+    width: 36px;
+    transition: 0.5s all;
+}
+
+.tlacitko_pridat img:hover {
+    width: 42px;
+}
+
+footer {
+    margin: 10px auto;
+}
