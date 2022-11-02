@@ -142,3 +142,9 @@ input:focus {
 footer {
     margin: 10px auto;
 }
+
+#smazVsechny {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}

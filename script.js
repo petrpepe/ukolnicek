@@ -12,6 +12,7 @@ const seznamUkolu = document.querySelector(".seznam_ukolu");
 
 const textInput = document.querySelector("#obsah_ukolu");
 const tlacitkoPridat = document.querySelector(".tlacitko_pridat");
+const tlacitkoSmazVsechny = document.querySelector("#smazVsechny");
 
 function vytvorUkol() {
     novyUkol = seznamUkolu.querySelector(".ukol_vzor").cloneNode(true);
@@ -112,6 +113,17 @@ textInput.addEventListener("keyup", (e) => {
 tlacitkoPridat.addEventListener("click", () => {
     textInput.value ? pridejUkol() : alert("Úkol musí mít nějaký obsah.");
     textInput.value = "";
+})
+
+tlacitkoSmazVsechny.addEventListener("click",() => {
+    localStorage.clear();
+    let ukol_vzor = seznamUkolu.querySelector(".ukol_vzor").cloneNode(true);
+    seznamUkolu.innerHTML = "";
+    seznamUkolu.appendChild(ukol_vzor);
+    celkemUkolyPocet = 0;
+    hotoveUkolyPocet = 0;
+    zadaneUkolyPocet = 0;
+    aktualizujPoctyUkolu();
 })
 
 function initializace() {
